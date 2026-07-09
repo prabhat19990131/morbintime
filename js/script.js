@@ -125,7 +125,7 @@ let TMDB_API_KEY = null;
 
 async function initConfig() {
     try {
-        const res = await fetch('data/config.json');
+        const res = await fetch('./data/config.json');
         const data = await res.json();
         if (data.config) {
             TMDB_API_KEY = data.config['TMDB_API_KEY'];
@@ -324,9 +324,9 @@ async function loadUserProfile() {
     profileHistory.innerHTML = '<p>Loading history...</p>';
     
     try {
-        const rRes = await fetch('data/ratings.json');
+        const rRes = await fetch('./data/ratings.json');
         const rData = await rRes.json();
-        const cRes = await fetch('data/comments.json');
+        const cRes = await fetch('./data/comments.json');
         const cData = await cRes.json();
         
         const localR = JSON.parse(localStorage.getItem('local_ratings')) || [];
@@ -900,7 +900,7 @@ submitReviewBtn.addEventListener('click', () => {
 // ======== LOAD DATA ========
 async function loadRatings() {
     try {
-        const res = await fetch('data/ratings.json');
+        const res = await fetch('./data/ratings.json');
         const data = await res.json();
         if (!data.ok) return;
 
@@ -1018,7 +1018,7 @@ function renderLeaderboardList(container, list) {
 
 async function loadGlobalComments() {
     try {
-        const res = await fetch('data/comments.json');
+        const res = await fetch('./data/comments.json');
         const data = await res.json();
         if (!data.ok) return;
         
@@ -1169,7 +1169,7 @@ function animLoop(timestamp) {
 // ======== INIT ========
 async function loadMovies() {
     try {
-        const res = await fetch('data/movies.json');
+        const res = await fetch('./data/movies.json');
         const data = await res.json();
         if (data.ok) {
             allMovies = data.movies;
