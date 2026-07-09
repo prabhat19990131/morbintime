@@ -1,26 +1,4 @@
 {
   "ok": true,
-  "ratings": [
-    {
-      "user": "prabhat",
-      "movie": "Loki",
-      "score": 8,
-      "verdict": "Peak Morbius Evasion \ud83d\udee1\ufe0f",
-      "date": "2026-07-09"
-    },
-    {
-      "user": "prabhat",
-      "movie": "WandaVision",
-      "score": 10,
-      "verdict": "Anti-Morbius Masterpiece \ud83c\udfc6",
-      "date": "2026-07-09"
-    },
-    {
-      "user": "prabhat",
-      "movie": "Spider-Man: Brand New Day",
-      "score": 10,
-      "verdict": "Anti-Morbius Masterpiece \ud83c\udfc6",
-      "date": "2026-07-09"
-    }
-  ]
+  "ratings": []
 }
